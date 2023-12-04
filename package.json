@@ -1,0 +1,27 @@
+{
+  "name": "vite-repro",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Minimal repro for vite mono-repos",
+  "repository": {
+    "url": "https://github.com/m1san/vite-issue-repro"
+  },
+  "license": "UNLICENSED",
+  "author": "m1san",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn turbo run build",
+    "setup": "volta setup"
+  },
+  "dependencies": {
+    "turbo": "^1.10.16",
+    "typescript": "~5.0.4"
+  },
+  "volta": {
+    "node": "20.5.0",
+    "yarn": "3.2.4"
+  }
+}
